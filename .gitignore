@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,react
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,react
+# Created by https://www.toptal.com/developers/gitignore/api/react,macos,yarn
+# Edit at https://www.toptal.com/developers/gitignore?templates=react,macos,yarn
 
 ### macOS ###
 # General
@@ -46,4 +46,20 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,react
+### yarn ###
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!.yarn/cache
+yarn.lock
+
+### Next.js ###
+.next
+
+.vscode/
+
+# End of https://www.toptal.com/developers/gitignore/api/react,macos,yarn
