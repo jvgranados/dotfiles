@@ -2,7 +2,19 @@
 export ZSH="/Users/jgranados/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="cobalt2"
+ZSH_THEME="spaceship"
+
+# Spaceship ZSH Configuration
+SPACESHIP_PROMPT_ORDER=(
+  host
+  dir
+  git
+  node
+  char
+)
+SPACESHIP_CHAR_SYMBOL="⚡️ "
+SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
+SPACESHIP_DOCKER_SHOW="false"
 
 # red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
@@ -20,6 +32,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# Color LS
+source $(dirname $(gem which colorls))/tab_complete.sh
+
+
 # Plugins
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -28,13 +44,17 @@ plugins=(git brew yarn npm z )
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
+alias l='colorls --group-directories-first --almost-all'
+alias ls='colorls --group-directories-first --almost-all'
+alias ll='colorls --group-directories-first --almost-all --long' #
+
 alias zshrc="code ~/.zshrc"
 alias hyper="code ~/.hyper.js"
 alias zsh="source ~/.zshrc"
 
 alias home="cd ~/"
 alias db="cd ~/Dropbox/"
-alias src="cd ~/Dropbox/Development/Sources/"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 
 alias fetch="git fetch -p"
 alias pull="git pull"
@@ -46,7 +66,8 @@ alias amend="git commit --amend"
 alias merge="git merge develop"
 alias log="git log --oneline"
 
-alias branch="git branch"
-alias brancha="git branch -a"
+alias br="git branch"
+alias bra="git branch -a"
 alias dev="git checkout develop"
+alias main="git checkout main"
 alias master="git checkout master"
