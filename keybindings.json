@@ -37,30 +37,6 @@
     "command": "workbench.action.toggleZenMode"
   },
   {
-    // --> camelcase navigation
-    "key": "alt+right",
-    "command": "cursorWordPartRight",
-    "when": "textInputFocus"
-  },
-  {
-    // --> camelcase navigation
-    "key": "alt+left",
-    "command": "cursorWordPartStartLeft",
-    "when": "textInputFocus"
-  },
-  {
-    // -->  camelcase selection
-    "key": "shift+alt+right",
-    "command": "cursorWordPartRightSelect",
-    "when": "textInputFocus"
-  },
-  {
-    // -->  camelcase selection
-    "key": "shift+alt+left",
-    "command": "cursorWordPartStartLeftSelect",
-    "when": "textInputFocus"
-  },
-  {
     // -->  match next occurrence
     "key": "cmd+m",
     "command": "editor.action.addSelectionToNextFindMatch",
