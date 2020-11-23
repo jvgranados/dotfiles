@@ -2,11 +2,15 @@ module.exports = {
   updateChannel: 'stable',
   config: {
     fontSize: 17,
-    fontFamily: 'Inconsolata for Powerline, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    windowSize: [1080, 720],
+    fontFamily: '"Hack Nerd Font", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+
+    windowSize: [1250, 800],
     cursorShape: 'BLOCK',
-    // wickedBorder: true,
-    // wickedBorderColor: '#ffc600',
+    hyperBorder: {
+      borderWidth: '2px',
+      borderColors: ['#1D976C', '#93F9B9'],
+      blurredColors: ['#177C59', '#84E0A6']
+    },
     padding: '12px',
     shell: '/bin/zsh',
     quickEdit: true,
@@ -14,7 +18,7 @@ module.exports = {
   },
 
   plugins: [
-    "hyper-dracula",
-    // 'hyperterm-cobalt2-theme'
+    "hyperborder",
+    "hyper-night-owl",
   ],
 };
