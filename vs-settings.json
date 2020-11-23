@@ -27,21 +27,23 @@
   "editor.useTabStops": true,
   "editor.renderControlCharacters": false,
   "diffEditor.ignoreTrimWhitespace": false,
-
+  // Explorer
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
-
+  // Workbench
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorTheme": "Night Owl",
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.openPositioning": "last",
-
+  "workbench.sideBar.location": "right",
+  // Window
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "window.newWindowDimensions": "inherit",
   "window.zoomLevel": 0,
-
+  // Files
   "files.autoSave": "onFocusChange",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -49,54 +51,49 @@
   "files.exclude": {
     "**/.svg": true
   },
-
+  //Terminal
   "terminal.integrated.fontFamily": "Fira Code iScript",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.rendererType": "dom",
-
+  // Search
   "search.exclude": {
     "*.lock": true,
     ".next": true,
     "**/node_modules": true
   },
-
+  // Zen
   "zenMode.centerLayout": false,
   "zenMode.hideTabs": false,
-
+  // Emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
+  // Extensions
   "extensions.ignoreRecommendations": true,
-
+  // Intellisense
   "npm-intellisense.importLinebreak": "\r\n",
-
+  // BracketPairColorizer
   "bracketPairColorizer.forceIterationColorCycle": true,
   "bracketPairColorizer.forceUniqueOpeningColor": true,
   "bracketPairColorizer.showHorizontalScopeLine": false,
-
+  // highlight-matching-tag
   "highlight-matching-tag.highlightFromAttributes": false,
   "highlight-matching-tag.showRuler": false,
   "highlight-matching-tag.showPath": false,
   "highlight-matching-tag.highlightSelfClosing": true,
-
+  // Material
   "material-icon-theme.activeIconPack": "react_redux",
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.saturation": 0.5,
-
+  // GitLens
   "gitlens.gitCommands.closeOnFocusOut": true,
-
+  // ESLint
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "eslint.alwaysShowStatus": true,
   "eslint.trace.server": "messages",
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "eslint.packageManager": "yarn",
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
+  // Prettier
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -106,6 +103,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
-  "sync.gist": "db10dea2eea3df20256a4352a78ea9d0"
+  // Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
