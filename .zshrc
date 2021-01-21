@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jgranados/.oh-my-zsh"
+export ZSH="/Users/javiergranados/.oh-my-zsh"
 
 # Theme
 ZSH_THEME="spaceship"
@@ -34,7 +34,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Color LS
 source $(dirname $(gem which colorls))/tab_complete.sh
-
 
 # Plugins
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -71,3 +70,7 @@ alias bra="git branch -a"
 alias dev="git checkout develop"
 alias main="git checkout main"
 alias master="git checkout master"
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
