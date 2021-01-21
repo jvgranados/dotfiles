@@ -3,11 +3,12 @@ module.exports = {
   config: {
     fontSize: 17,
     fontFamily: '"Hack Nerd Font", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-
     windowSize: [1250, 800],
+    css: '.tabs_title {display: none !important;}',
     cursorShape: 'BLOCK',
     hyperBorder: {
       borderWidth: '2px',
+      borderRadiusInner: "10px",
       borderColors: ['#1D976C', '#93F9B9'],
       blurredColors: ['#177C59', '#84E0A6']
     },
