@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/javiergranados/.oh-my-zsh"
+ZSH=$HOME/.oh-my-zsh
 
 # Theme
 ZSH_THEME="spaceship"
@@ -15,6 +15,10 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_CHAR_SYMBOL="⚡️ "
 SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
 SPACESHIP_DOCKER_SHOW="false"
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
 
 # red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
@@ -35,12 +39,13 @@ export NVM_DIR="$HOME/.nvm"
 # Color LS
 source $(dirname $(gem which colorls))/tab_complete.sh
 
+# oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+
 # Plugins
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git brew yarn npm z )
-
-source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias l='colorls --group-directories-first --almost-all'
@@ -55,22 +60,18 @@ alias home="cd ~/"
 alias db="cd ~/Dropbox/"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 
-alias fetch="git fetch -p"
-alias pull="git pull"
-alias push="git push"
-alias st="git status"
+alias gf="git fetch -p"
+alias gp="git pull"
+alias gps="git push"
+alias gs="git status"
 
-alias add="git add ."
-alias amend="git commit --amend"
-alias merge="git merge develop"
-alias log="git log --oneline"
+alias ga="git add ."
+alias gam="git commit --amend"
+alias gm="git merge develop"
+alias gl="git log --oneline"
 
 alias br="git branch"
 alias bra="git branch -a"
 alias dev="git checkout develop"
 alias main="git checkout main"
 alias master="git checkout master"
-
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
