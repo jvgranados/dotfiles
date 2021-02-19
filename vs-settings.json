@@ -5,13 +5,11 @@
   "editor.detectIndentation": false,
   "editor.dragAndDrop": false,
   "editor.folding": false,
-  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Dank Mono, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17,
   "editor.fontWeight": "400",
   "editor.formatOnPaste": true,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.letterSpacing": 1.2,
   "editor.lineHeight": 25,
   "editor.matchBrackets": "never",
   "editor.minimap.enabled": false,
@@ -40,7 +38,6 @@
   "workbench.editor.openPositioning": "last",
   "workbench.sideBar.location": "right",
   // Window
-  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
   "window.newWindowDimensions": "inherit",
   "window.zoomLevel": 0,
   // Files
@@ -52,8 +49,8 @@
     "**/.svg": true
   },
   //Terminal
-  "terminal.integrated.fontFamily": "Fira Code iScript",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.rendererType": "dom",
   // Search
   "search.exclude": {
@@ -89,10 +86,13 @@
   "gitlens.gitCommands.closeOnFocusOut": true,
   // ESLint
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "eslint.alwaysShowStatus": true,
   "eslint.trace.server": "messages",
   "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
   // Prettier
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -103,8 +103,21 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // Tailwind CSS
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  },
+  // Headwind
+  "headwind.removeDuplicates": true,
   // Stylelint
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false
+  // Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.packageManager": "yarn"
 }
